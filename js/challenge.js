@@ -1,8 +1,5 @@
-
-
-var count = 0;
-var t;
-//var timer_is_on = 0;
+let count = 0;
+let t;
 timedCount() 
 function timedCount() {
   document.getElementById("counter").innerText = count++;

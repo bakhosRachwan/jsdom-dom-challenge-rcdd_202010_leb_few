@@ -34,7 +34,7 @@ let list = document.querySelector('.likes')
   
   li= document.createElement('li');
   li.innerHTML = `${like} was liked ${times++} times `;
-  
+  list.appendChild(li);
   }
   else {
     times=1;

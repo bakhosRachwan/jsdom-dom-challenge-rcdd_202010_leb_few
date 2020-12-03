@@ -1,9 +1,9 @@
-let count = 0;
-let startCount = setInterval(counters, 1000);
+// let count = 0;
+// let startCount = setInterval(counters, 1000);
 
-function counters(){
-  document.getElementById('counter').innerText = count++;
-}
+// function counters(){
+//   document.getElementById('counter').innerText = count++;
+// }
 
 let plus = document.querySelector('#plus');
 plus.addEventListener('click', function(){

@@ -28,10 +28,12 @@ document.querySelector("#comment-form").addEventListener('submit', function(e){
 times=1;
 let likeBtn = document.querySelector('#heart');
 likeBtn.addEventListener('click', function(){
-  let like=document.getElementById('counter').innerText;
+let like=document.getElementById('counter').innerText;
   
   if(like == like){
-  document.querySelector('.likes').innerHTML = `<li>${like} was liked ${times++} times </li>`;
+  li= document.createElement('li');
+  li.innerHTML = `${like} was liked ${times++} times `;
+  
   }
   else {
     times=1;

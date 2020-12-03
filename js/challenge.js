@@ -73,10 +73,10 @@ button.addEventListener('click', function(event){
      st = setInterval((document.querySelector('#counter').innerHTML= cnt++)
 , 1000) ;
     
-    }
+  }
     
 
 
-  }
+  
 });
 

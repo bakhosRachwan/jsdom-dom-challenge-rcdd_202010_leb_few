@@ -28,7 +28,7 @@ document.querySelector("#comment-form").addEventListener('submit', function(e){
 times=1;
 let likeBtn = document.querySelector('#heart');
 likeBtn.addEventListener('click', function(){
-  let like=document.getElementById('counter').innerText;
+  //let like=document.getElementById('counter').innerText;
   console.log(document.getElementById('counter').innerText)
   console.log(document.getElementById('counter').value)
   if(like == like){

@@ -5,6 +5,8 @@
 //   document.getElementById('counter').innerText = count++;
 // }
 
+
+
 let plus = document.querySelector('#plus');
 plus.addEventListener('click', function(){
   document.getElementById('counter').innerText = count++;

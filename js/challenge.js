@@ -81,4 +81,14 @@ button.addEventListener('click', function(event){
 
   
 });
+function startCount() {
+  if (!timer_is_on) {
+    timer_is_on = 1;
+    timedCount();
+  }
+}
 
+function stopCount() {
+  clearTimeout(t);
+  timer_is_on = 0;
+}

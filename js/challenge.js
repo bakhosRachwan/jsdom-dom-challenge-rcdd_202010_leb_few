@@ -29,8 +29,8 @@ times=1;
 let likeBtn = document.querySelector('#heart');
 likeBtn.addEventListener('click', function(){
   let like=document.getElementById('counter').innerText;
-  console.log()
-  console.log()
+  console.log(document.getElementById('counter').innerText)
+  console.log(document.getElementById('counter').value)
   if(like == like){
   document.querySelector('.likes').innerHTML += `<li>${like} was liked ${times++} times </li>`;
   }

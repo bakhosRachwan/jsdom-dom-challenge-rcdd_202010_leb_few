@@ -67,9 +67,5 @@ button.addEventListener('click', function(event){
     timedCount();
     
   }
-    
-
-
-  
 });
 

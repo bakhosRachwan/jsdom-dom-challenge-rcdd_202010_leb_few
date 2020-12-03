@@ -76,7 +76,6 @@ button.addEventListener('click', function(event){
     let cnt = document.querySelector('#counter').innerText;
 
     function mounir(){
-      document.querySelector('#counter').innerHTML= cnt++;
       
   }
 });

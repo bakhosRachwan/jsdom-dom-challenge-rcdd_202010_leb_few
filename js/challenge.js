@@ -2,7 +2,7 @@
 
 var count = 0;
 var t;
-var timer_is_on = 0;
+//var timer_is_on = 0;
 timedCount() 
 function timedCount() {
   document.getElementById("counter").innerText = count++;
@@ -61,7 +61,7 @@ button.addEventListener('click', function(event){
     //clearInterval(startCount) ;
     
  clearTimeout(t);
-  timer_is_on = 0;
+  //timer_is_on = 0;
   }
   else {
     button.innerHTML = "pause";
@@ -70,7 +70,7 @@ button.addEventListener('click', function(event){
     minus.disabled = false;
     submit.disabled = false;
     myInterval=-1;
-     timer_is_on = 1;
+     //timer_is_on = 1;
     timedCount();
     
   }

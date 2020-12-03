@@ -8,7 +8,7 @@
 var c = 0;
 var t;
 var timer_is_on = 0;
-
+timedCount() 
 function timedCount() {
   document.getElementById("counter").innerText = c++;
   t = setTimeout(timedCount, 1000);

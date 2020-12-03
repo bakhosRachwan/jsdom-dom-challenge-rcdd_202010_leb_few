@@ -68,15 +68,15 @@ button.addEventListener('click', function(event){
     submit.disabled = false;
     myInterval=-1;
     
+    let cnt = document.querySelector('#counter').innerText;
 
-     st = setInterval(mounir, 1000) ;
+     st = setInterval((document.querySelector('#counter').innerHTML= cnt++)
+, 1000) ;
     
     }
     
-    let cnt = document.querySelector('#counter').innerText;
 
-    function mounir(){
-      
+
   }
 });
 

@@ -5,7 +5,14 @@
 //   document.getElementById('counter').innerText = count++;
 // }
 
+var c = 0;
+var t;
+var timer_is_on = 0;
 
+function timedCount() {
+  document.getElementById("counter").innerText = c++;
+  t = setTimeout(timedCount, 1000);
+}
 
 let plus = document.querySelector('#plus');
 plus.addEventListener('click', function(){
@@ -56,7 +63,7 @@ button.addEventListener('click', function(event){
     minus.disabled = true;
     submit.disabled = true;
     myInterval=0;
-    clearInterval(startCount) ;
+    //clearInterval(startCount) ;
 
   }
   else {

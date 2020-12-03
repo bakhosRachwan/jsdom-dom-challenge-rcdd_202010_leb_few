@@ -64,7 +64,9 @@ button.addEventListener('click', function(event){
     submit.disabled = true;
     myInterval=0;
     //clearInterval(startCount) ;
-
+    
+ clearTimeout(t);
+  timer_is_on = 0;
   }
   else {
     button.innerHTML = "pause";
@@ -73,7 +75,8 @@ button.addEventListener('click', function(event){
     minus.disabled = false;
     submit.disabled = false;
     myInterval=-1;
-    
+     timer_is_on = 1;
+    timedCount();
     
   }
     
@@ -83,12 +86,10 @@ button.addEventListener('click', function(event){
 });
 function startCount() {
   if (!timer_is_on) {
-    timer_is_on = 1;
-    timedCount();
+   
   }
 }
 
 function stopCount() {
-  clearTimeout(t);
-  timer_is_on = 0;
+ 
 }

@@ -33,7 +33,7 @@ let list = document.querySelector('.likes')
   if(like == like){
   
   li= document.createElement('li');
-  li.innerHTML = `${like} was liked ${times++} times `;
+  li.innerHTML += `${like} was liked ${times++} times `;
   list.appendChild(li);
   }
   else {

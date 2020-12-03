@@ -31,7 +31,7 @@ likeBtn.addEventListener('click', function(){
   let like=document.getElementById('counter').innerText;
   
   if(like == like){
-  document.querySelector('.likes').innerHTML += `<li>${like} was liked ${times++} times </li>`;
+  document.querySelector('.likes').innerHTML = `<li>${like} was liked ${times++} times </li>`;
   }
   else{
     times=1;

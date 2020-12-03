@@ -57,7 +57,6 @@ button.addEventListener('click', function(event){
     submit.disabled = true;
     myInterval=0;
     clearInterval(startCount) ;
-    clearInterval(st) ;
 
   }
   else {
@@ -68,10 +67,6 @@ button.addEventListener('click', function(event){
     submit.disabled = false;
     myInterval=-1;
     
-    let cnt = document.querySelector('#counter').innerText;
-
-     st = setInterval((document.querySelector('#counter').innerHTML= cnt++)
-, 1000) ;
     
   }
     
